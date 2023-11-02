@@ -1,0 +1,1108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zeomart</title>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header-top">
+                    <div class="header-top-logo">
+                        <a href="#" class="top-logo-link">
+                            <img src="./assets/Zeomart..png" alt="">
+                        </a>
+                    </div>
+                    <div class="header-top-search">
+                        <div class="select">
+                            <select name="test" >
+                                <option value="All Categories">All Categories</option>
+                                <option value="New">New</option> 
+                            </select>
+                        </div>
+                        
+                        <div class="input">
+                            <input type="text" placeholder="Search products…">
+                            <span class="line-vertical"></span>
+                            <button class="input-btn">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13.141 13.6135L12.8244 13.2972L12.4751 13.5768C11.2765 14.5363 9.7623 15.1127 8.1163 15.1127C4.26074 15.1127 1.11792 11.9645 1.11792 8.10781C1.11792 4.25166 4.26017 1.10942 8.1163 1.10942C11.9726 1.10942 15.1163 4.25181 15.1163 8.10781C15.1163 9.75588 14.5391 11.2727 13.5787 12.4733L13.2992 12.8227L13.6156 13.1392L16.7341 16.2576C16.7928 16.3206 16.825 16.4038 16.824 16.49C16.823 16.5776 16.7877 16.6613 16.7257 16.7232C16.6637 16.7851 16.5799 16.8203 16.4923 16.8212C16.406 16.822 16.3228 16.7896 16.2598 16.7308L13.141 13.6135ZM14.448 8.10781C14.448 4.60013 11.624 1.77611 8.1163 1.77611C4.60862 1.77611 1.78459 4.60013 1.78459 8.10781C1.78459 11.6147 4.60789 14.446 8.1163 14.446C11.6247 14.446 14.448 11.6147 14.448 8.10781Z" fill="#443297" stroke="black"/>
+                                    </svg>
+                            </button>
+                        </div>
+                        
+                        
+                       
+                        
+                    </div>
+                    <div class="header-top-menu">
+                        <div class="header-top-menu-item">
+                            <div class="header-top-menu-img">
+                                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14.6237 3.55396C17.2178 3.55396 19.3201 5.68866 19.3201 8.67725C19.3201 14.6544 12.916 18.07 10.7813 19.3508C8.64654 18.07 2.24243 14.6544 2.24243 8.67725C2.24243 5.68866 4.37714 3.55396 6.93878 3.55396C8.52699 3.55396 9.92736 4.40784 10.7813 5.26172C11.6351 4.40784 13.0355 3.55396 14.6237 3.55396ZM11.5788 16.8779C12.331 16.4032 13.0099 15.931 13.6452 15.4255C16.1906 13.4018 17.6123 11.1902 17.6123 8.67725C17.6123 6.66209 16.2999 5.26172 14.6237 5.26172C13.7049 5.26172 12.711 5.74843 11.9886 6.46911L10.7813 7.6765L9.57385 6.46911C8.85147 5.74843 7.85756 5.26172 6.93878 5.26172C5.28225 5.26172 3.9502 6.67575 3.9502 8.67725C3.9502 11.1911 5.37276 13.4018 7.91648 15.4255C8.55261 15.931 9.23145 16.4032 9.98372 16.8771C10.239 17.0385 10.4918 17.193 10.7813 17.3655C11.0707 17.193 11.3235 17.0385 11.5788 16.8779Z" fill="white"/>
+                                    </svg>
+                            </div>
+                            <div class="header-top-menu-text">
+                                <div class="header-top-menu-subtitle">Wishlist</div>
+                                <div class="header-top-menu-title">My Items</div>
+                            </div>
+                            
+                            <a href="#" class="header-top-menu-link"></a>
+                        </div>
+                        <div class="header-top-menu-item">
+                            <div class="header-top-menu-img">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10 9.16667C10.8241 9.16667 11.6297 8.92233 12.3149 8.46442C13.0001 8.00662 13.5342 7.35587 13.8495 6.59452C14.1648 5.83316 14.2474 4.99538 14.0866 4.18712C13.9258 3.37888 13.529 2.63644 12.9462 2.05373C12.3636 1.47101 11.6212 1.07417 10.8129 0.913401C10.0046 0.752626 9.16683 0.835143 8.4055 1.1505C7.64412 1.46587 6.99338 1.99993 6.53554 2.68513C6.0777 3.37033 5.83333 4.17592 5.83333 5C5.83466 6.10467 6.27406 7.1637 7.05518 7.94482C7.8363 8.72592 8.89533 9.16533 10 9.16667ZM10 2.5C10.4944 2.5 10.9778 2.64663 11.3889 2.92133C11.8001 3.19603 12.1205 3.58648 12.3097 4.04329C12.4989 4.50011 12.5484 5.00277 12.452 5.48772C12.3555 5.97268 12.1174 6.41814 11.7677 6.76777C11.4182 7.1174 10.9727 7.3555 10.4877 7.45197C10.0027 7.54842 9.50008 7.49892 9.04325 7.3097C8.5865 7.12048 8.19603 6.80005 7.92132 6.38892C7.64662 5.97781 7.5 5.49446 7.5 5C7.5 4.33696 7.76339 3.70108 8.23223 3.23223C8.70108 2.76339 9.337 2.5 10 2.5ZM2.5 18.3333V15C2.50132 13.8953 2.94073 12.8363 3.72185 12.0552C4.50297 11.2741 5.56201 10.8347 6.66666 10.8333H13.3333C14.438 10.8347 15.497 11.2741 16.2782 12.0552C17.0592 12.8363 17.4987 13.8953 17.5 15V18.3333C17.5 18.5543 17.4122 18.7663 17.2559 18.9226C17.0997 19.0788 16.8877 19.1667 16.6667 19.1667C16.4457 19.1667 16.2337 19.0788 16.0774 18.9226C15.9212 18.7663 15.8333 18.5543 15.8333 18.3333V15C15.8333 14.337 15.5699 13.7011 15.1011 13.2322C14.6322 12.7634 13.9963 12.5 13.3333 12.5H6.66666C6.00362 12.5 5.36774 12.7634 4.8989 13.2322C4.43006 13.7011 4.16667 14.337 4.16667 15V18.3333C4.16667 18.5543 4.07887 18.7663 3.92259 18.9226C3.76631 19.0788 3.55435 19.1667 3.33333 19.1667C3.11232 19.1667 2.90036 19.0788 2.74407 18.9226C2.5878 18.7663 2.5 18.5543 2.5 18.3333Z" fill="white"/>
+                                    </svg>
+                                    
+                            </div>
+                            <div class="header-top-menu-text">
+                                <div class="header-top-menu-subtitle">Sign in</div>
+                                <div class="header-top-menu-title">Account</div>
+                            </div>
+                            <a href="#" class="header-top-menu-link"></a>
+                        </div>
+                        <div class="header-top-menu-item header-cart">
+                            <div class="header-top-menu-img">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_2_89)">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15 17.5C15 16.5795 15.7462 15.8333 16.6667 15.8333C17.5872 15.8333 18.3333 16.5795 18.3333 17.5C18.3333 18.4205 17.5872 19.1667 16.6667 19.1667C15.7462 19.1667 15 18.4205 15 17.5Z" fill="white"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.83337 17.5C5.83337 16.5795 6.57957 15.8333 7.50004 15.8333C8.42054 15.8333 9.16671 16.5795 9.16671 17.5C9.16671 18.4205 8.42054 19.1667 7.50004 19.1667C6.57957 19.1667 5.83337 18.4205 5.83337 17.5Z" fill="white"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0.833333C0 0.373096 0.373096 0 0.833333 0H4.16667C4.56386 0 4.90584 0.280321 4.98379 0.669786L5.68369 4.16667H19.1667C19.415 4.16667 19.6504 4.27744 19.8088 4.4688C19.9671 4.66015 20.0318 4.91215 19.9853 5.15611L18.6508 12.154C18.5364 12.7295 18.2233 13.2465 17.7663 13.6144C17.3115 13.9805 16.743 14.1758 16.1595 14.1667H8.07387C7.49032 14.1758 6.92183 13.9805 6.46707 13.6144C6.01021 13.2466 5.6972 12.7299 5.58278 12.1547C5.58273 12.1545 5.58283 12.1549 5.58278 12.1547L4.19066 5.19933C4.18501 5.17632 4.18032 5.15294 4.17663 5.12923L3.4836 1.66667H0.833333C0.373096 1.66667 0 1.29357 0 0.833333H0ZM6.01728 5.83333L7.21737 11.8293C7.25547 12.0212 7.35983 12.1935 7.51218 12.3161C7.66453 12.4387 7.85516 12.5039 8.0507 12.5002L8.06667 12.5H16.1667L16.1827 12.5002C16.3782 12.5039 16.5688 12.4387 16.7212 12.3161C16.8728 12.194 16.9769 12.0227 17.0154 11.832L18.1594 5.83333H6.01728Z" fill="white"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_2_89">
+                                    <rect width="20" height="20" fill="white"/>
+                                    </clipPath>
+                                    </defs>
+                                    </svg>
+                                    <div class="cart-count">2</div>
+                            </div>
+                            
+                            <div class="header-top-menu-text">
+                                <div class="header-top-menu-subtitle">$200.99</div>
+                                <div class="header-top-menu-title">Total</div>
+                            </div>
+                            
+                            <a href="#" class="header-top-menu-link"></a>
+                        </div>
+                    </div>
+                    <button class="burger-btn"></button>
+                </div>
+                <div class="header-bottom">
+                    <div class="category-main">
+                        <span></span>
+                        <div class="bottom-category">Browse Categories</div>
+                    </div>
+                    
+                    <nav class="main-menu">
+                        <ul class="main-menu-grid">
+                            <li class="menu-item">
+                                <a href="#">Home</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">Home</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">Home</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">Home</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">Home</a>
+                            </li>
+                            
+                        </ul>
+                    </nav>
+                    <div class="addition-menu">
+                        <ul class="main-menu-grid">
+                            <li class="menu-item">
+                                <a href="#">Deal of the day</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">Home</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">Home</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">New arrivals</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        
+        </header>        <main>
+    
+    <section class="hero">
+        <div class="container">
+            <div class="help-class swiper">
+                <div class="hero-main swiper-wrapper">
+                    
+                    <div class="hero-main-img swiper-slide">
+                        <img src="./assets/bg.png" alt="" class="img-slider">
+    
+                        <div class="hero-main-text">
+                            <div class="main-text-label">Limited edition</div>
+                            <div class="main-text-title">Sport Essential</div>
+                            <div class="main-text-title medium">Yoga Mats, Weights & more</div>
+                            <div class="main-text-subtitle">Discover our new items. Up to <span>25% Off !</span> </div>
+                            <div class="main-text-btn">
+                                <a href="">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-main-img swiper-slide">
+                        <img src="./assets/bg.png" alt="" class="img-slider">
+    
+                        <div class="hero-main-text">
+                            <div class="main-text-label">Limited edition</div>
+                            <div class="main-text-title">Sport Essential</div>
+                            <div class="main-text-title medium">Yoga Mats, Weights & more</div>
+                            <div class="main-text-subtitle">Discover our new items. Up to <span>25% Off !</span> </div>
+                            <div class="main-text-btn">
+                                <a href="">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                   
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+            
+            
+        </div>
+    </section>
+    
+   
+   <section class="info">
+        <div class="container">
+            <div class="info-main">
+                <div class="info-main-item">
+                    <div class="info-item-img">
+                        <img src="./assets/fast-delivery 1.png" alt="">
+                    </div>
+                    <div class="info-item-text">
+                        <div class="item-text-title">Free Shipping</div>
+                        <div class="item-text-subtitle">Free Shipping for orders over $200</div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="info-main-item">
+                    <div class="info-item-img">
+                        <img src="./assets/surface1.png" alt="">
+                    </div>
+                    <div class="info-item-text">
+                        <div class="item-text-title">Free Shipping</div>
+                        <div class="item-text-subtitle">Within 30 days for an exchange.</div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="info-main-item">
+                    <div class="info-item-img">
+                        <img src="./assets/fast-delivery 1.png" alt="">
+                    </div>
+                    <div class="info-item-text">
+                        <div class="item-text-title">Free Shipping</div>
+                        <div class="item-text-subtitle">24 hours a day, 7 days a week</div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="info-main-item">
+                    <div class="info-item-img">
+                        <img src="./assets/surface1.png" alt="">
+                    </div>
+                    <div class="info-item-text">
+                        <div class="item-text-title">Free Shipping</div>
+                        <div class="item-text-subtitle">Pay with Multiple Credit Cards</div>
+                        
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+    </section>
+        <section class="time">
+        <div class="container">
+            <div class="time-main">
+                <div class="time-main-title">
+                    <div class="hours-main">
+                        <div class="hours-title">
+                            <div class="hours-title-text">Top Deals Of The Day</div>
+                            <div class="hours-title-count">
+                                <div class="count-value"><span id="days"></span> Days :</div>
+                                <div class="count-value"><span id="hours"></span> Hours :</div>
+                                <div class="count-value"><span id="minutes"></span> Minutes :</div>
+                                <div class="count-value"><span id="seconds"></span> Seconds</div>
+                            </div>
+                        </div>
+                        <div class="hours-link">
+                            <span>
+                                <a href="#">View all</a>
+                            </span>
+                            
+                        </div>
+                    </div>
+
+                </div>
+                <div class="time-main-accordeon">
+                    <div class="time-main-products swiper">
+                        <div class="time-main-pr-wrapper swiper-wrapper">
+                            <div class="time-pr-item swiper-slide">
+                                <div class="time-img">
+                                    <a href="">
+                                        <img src="assets/surface 1.png" alt="">
+                                    </a>
+                                    <div class="img-overlay">
+                                        <div class="overlay-btn">
+                                            <a href="">Add to card</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="time-company">Sumsung</div>
+                                <div class="time-title">
+                                    <a href="#">Samsung 65" 4K UHD HDR QLED Tizen Smart TV</a>
+                                </div>
+                                <div class="time-price">
+                                    <div class="new-price">$32.50</div>
+                                    <div class="old-price">$45</div>
+                                    <span class="sale-value">20% Off</span>
+                                </div>
+                            </div>
+    
+                            <div class="time-pr-item swiper-slide">
+                                <div class="time-img">
+                                    <a href="">
+                                        <img src="assets/surface 1.png" alt="">
+                                    </a>
+                                    <div class="img-overlay">
+                                        <div class="overlay-btn">
+                                            <a href="">Add to card</a>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="time-company">Rolex</div>
+                                <div class="time-title">
+                                    <a href="#">Pre-Owned Rolex Day-date 1802 Gold Watch (Certified Authenti...</a>
+                                </div>
+                                <div class="time-price">
+                                    <div class="new-price">$32.50</div>
+                                    <div class="old-price">$45</div>
+                                    <span class="sale-value">20% Off</span>
+                                </div>
+                            </div>
+                            <div class="time-pr-item swiper-slide">
+                                <div class="time-img">
+                                    <a href="">
+                                        <img src="assets/surface 1.png" alt="">
+                                    </a>
+                                    <div class="img-overlay">
+                                        <div class="overlay-btn">
+                                            <a href="">Add to card</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="time-company">Sony</div>
+                                <div class="time-title">
+                                    <a href="#">Ozark Trail 6-Person Clip & Camp Dome Tent</a>
+                                </div>
+                                <div class="time-price">
+                                    <div class="new-price">$32.50</div>
+                                    <div class="old-price">$45</div>
+                                    <span class="sale-value">20% Off</span>
+                                </div>
+                            </div>
+    
+                            <div class="time-pr-item swiper-slide">
+                                <div class="time-img">
+                                    <a href="">
+                                        <img src="assets/surface 1.png" alt="">
+                                    </a>
+                                    <div class="img-overlay">
+                                        <div class="overlay-btn">
+                                            <a href="">Add to card</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="time-company">Sumsung</div>
+                                <div class="time-title">
+                                    <a href="#">Samsung 65" 4K UHD HDR QLED Tizen Smart TV</a>
+                                </div>
+                                <div class="time-price">
+                                    <div class="new-price">$32.50</div>
+                                    <div class="old-price">$45</div>
+                                    <span class="sale-value">20% Off</span>
+                                </div>
+                            </div>
+    
+                            <div class="time-pr-item swiper-slide">
+                                <div class="time-img">
+                                    <a href="">
+                                        <img src="assets/surface 1.png" alt="">
+                                    </a>
+                                    <div class="img-overlay">
+                                        <div class="overlay-btn">
+                                            <a href="">Add to card</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="time-company">Sumsung</div>
+                                <div class="time-title">
+                                    <a href="#">Samsung 65" 4K UHD HDR QLED Tizen Smart TV</a>
+                                </div>
+                                <div class="time-price">
+                                    <div class="new-price">$32.50</div>
+                                    <div class="old-price">$45</div>
+                                    <span class="sale-value">20% Off</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="time-pagination">
+                        <div class="swiper-pagination"></div>
+
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                 
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <section class="category">
+        <div class="container">
+            <div class="category-main-section">
+                <div class="category-main-head">
+                    <div class="hours-title-text">Shop by Category</div>
+                    <div class="hours-link">
+                        <span>
+                            <a href="">View All Categories</a>
+                        </span>
+                       
+                    </div>
+
+                </div>
+                <div class="category-main-items">
+                    <div class="shop-category-item">
+                        <div class="category-item-img">
+                            <img src="./assets/image 36.png" alt="">
+                        </div>
+                        <div class="category-item-title"><a class="category-item-title-link" href="#">Electronics</a></div>
+                        <div class="category-item-count">29 items</div>
+                    </div>
+
+                    <div class="shop-category-item">
+                        <div class="category-item-img">
+                            <img src="./assets/image 36.png" alt="">
+                        </div>
+                        <div class="category-item-title"><a class="category-item-title-link" href="#">Electronics</a></div>
+                        <div class="category-item-count">29 items</div>
+                    </div>
+
+                    <div class="shop-category-item">
+                        <div class="category-item-img">
+                            <img src="./assets/image 38.png" alt="">
+                        </div>
+                        <div class="category-item-title"><a class="category-item-title-link" href="#">Health and beauty</a></div>
+                        <div class="category-item-count">29 items</div>
+                    </div>
+
+                    <div class="shop-category-item">
+                        <div class="category-item-img">
+                            <img src="./assets/image 38.png" alt="">
+                        </div>
+                        <div class="category-item-title"><a class="category-item-title-link" href="#">Electronics</a></div>
+                        <div class="category-item-count">29 items</div>
+                    </div>
+
+                    <div class="shop-category-item">
+                        <div class="category-item-img">
+                            <img src="./assets/image 38.png" alt="">
+                        </div>
+                        <div class="category-item-title"><a class="category-item-title-link" href="#">Electronics</a></div>
+                        <div class="category-item-count">29 items</div>
+                    </div>
+
+                    <div class="shop-category-item">
+                        <div class="category-item-img">
+                            <img src="./assets/image 38.png" alt="">
+                        </div>
+                        <div class="category-item-title"><a class="category-item-title-link" href="#">Electronics</a></div>
+                        <div class="category-item-count">29 items</div>
+                    </div>
+
+                    <div class="shop-category-item">
+                        <div class="category-item-img">
+                            <img src="./assets/image 38.png" alt="">
+                        </div>
+                        <div class="category-item-title"><a class="category-item-title-link" href="#">Electronics</a></div>
+                        <div class="category-item-count">29 items</div>
+                    </div>
+
+                    <div class="shop-category-item">
+                        <div class="category-item-img">
+                            <img src="./assets/image 42.png" alt="">
+                        </div>
+                        <div class="category-item-title"><a class="category-item-title-link" href="#">Electronics</a></div>
+                        <div class="category-item-count">29 items</div>
+                    </div>
+                </div>
+                <div class="category-main-threeblocks">
+                    <div class="threeblock-item">
+                        <div class="threeblock-item-text">
+                            <div class="blue-text">Starting from $899.</div>
+                            <div class="threeblock-item-text-title">Blood Pressure 
+                                Meter</div>
+                            <div class="threeblock-item-text-link">
+                                <a href="#">Shop Now</a>
+                            </div>
+                        </div>
+                        <div class="threeblock-item-image">
+                            <img src="./assets/image 16.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="threeblock-item">
+                        <div class="threeblock-item-text">
+                            <div class="blue-text">Starting from $899.</div>
+                            <div class="threeblock-item-text-title">Blood Pressure 
+                                Meter</div>
+                            <div class="threeblock-item-text-link">
+                                <a href="#">Shop Now</a>
+                            </div>
+                        </div>
+                        <div class="threeblock-item-image">
+                            <img src="./assets/image 16.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="threeblock-item">
+                        <div class="threeblock-item-text">
+                            <div class="blue-text">Starting from $899.</div>
+                            <div class="threeblock-item-text-title">Blood Pressure 
+                                Meter</div>
+                            <div class="threeblock-item-text-link">
+                                <a href="#">Shop Now</a>
+                            </div>
+                        </div>
+                        <div class="threeblock-item-image">
+                            <img src="./assets/image 16.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        <section class="bestseller">
+        <div class="container">
+            <div class="bestseller-main">
+                <div class="category-main-head">
+                    <div class="hours-title-text">Best seller in the last month</div>
+                    <div class="hours-link">
+                        <span>
+                            <a href="">Al</a>
+                        </span>
+                       
+                    </div>
+
+                  
+                </div>
+
+                <div class="time-main-accordeon bestseller-pagination">
+                    <div class="swiper bestseller-slider">
+                        <div class="time-main-pr-wrapper swiper-wrapper">
+                            <div class="time-pr-item swiper-slide">
+                                <div class="time-img">
+                                    <a href="">
+                                        <img src="assets/surface 1.png" alt="">
+                                    </a>
+                                    <div class="img-overlay">
+                                        <div class="overlay-btn">
+                                            <a href="">Add to card</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="time-company">Sumsung</div>
+                                <div class="time-title">
+                                    <a href="#">Samsung 65" 4K UHD HDR QLED Tizen Smart TV</a>
+                                </div>
+                                <div class="time-price">
+                                    <div class="new-price">$32.50</div>
+                                    <div class="old-price">$45</div>
+                                    <span class="sale-value">20% Off</span>
+                                </div>
+                            </div>
+    
+                            <div class="time-pr-item swiper-slide">
+                                <div class="time-img">
+                                    <a href="">
+                                        <img src="assets/surface 1.png" alt="">
+                                    </a>
+                                    <div class="img-overlay">
+                                        <div class="overlay-btn">
+                                            <a href="">Add to card</a>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="time-company">Rolex</div>
+                                <div class="time-title">
+                                    <a href="#">Pre-Owned Rolex Day-date 1802 Gold Watch (Certified Authenti...</a>
+                                </div>
+                                <div class="time-price">
+                                    <div class="new-price">$32.50</div>
+                                    <div class="old-price">$45</div>
+                                    <span class="sale-value">20% Off</span>
+                                </div>
+                            </div>
+                            <div class="time-pr-item swiper-slide">
+                                <div class="time-img">
+                                    <a href="">
+                                        <img src="assets/surface 1.png" alt="">
+                                    </a>
+                                    <div class="img-overlay">
+                                        <div class="overlay-btn">
+                                            <a href="">Add to card</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="time-company">Sony</div>
+                                <div class="time-title">
+                                    <a href="#">Ozark Trail 6-Person Clip & Camp Dome Tent</a>
+                                </div>
+                                <div class="time-price">
+                                    <div class="new-price">$32.50</div>
+                                    <div class="old-price">$45</div>
+                                    <span class="sale-value">20% Off</span>
+                                </div>
+                            </div>
+    
+                            <div class="time-pr-item swiper-slide">
+                                <div class="time-img">
+                                    <a href="">
+                                        <img src="assets/surface 1.png" alt="">
+                                    </a>
+                                    <div class="img-overlay">
+                                        <div class="overlay-btn">
+                                            <a href="">Add to card</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="time-company">Sumsung</div>
+                                <div class="time-title">
+                                    <a href="#">Samsung 65" 4K UHD HDR QLED Tizen Smart TV</a>
+                                </div>
+                                <div class="time-price">
+                                    <div class="new-price">$32.50</div>
+                                    <div class="old-price">$45</div>
+                                    <span class="sale-value">20% Off</span>
+                                </div>
+                            </div>
+    
+                            <div class="time-pr-item swiper-slide">
+                                <div class="time-img">
+                                    <a href="">
+                                        <img src="assets/surface 1.png" alt="">
+                                    </a>
+                                    <div class="img-overlay">
+                                        <div class="overlay-btn">
+                                            <a href="">Add to card</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="time-company">Sumsung</div>
+                                <div class="time-title">
+                                    <a href="#">Samsung 65" 4K UHD HDR QLED Tizen Smart TV</a>
+                                </div>
+                                <div class="time-price">
+                                    <div class="new-price">$32.50</div>
+                                    <div class="old-price">$45</div>
+                                    <span class="sale-value">20% Off</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                       
+
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    
+                 
+                </div>
+            </div>
+        </div>
+    </section>            
+    <section class="shipping">
+        <div class="container">
+            <div class="shipping-main">
+                <p>Members get free shipping* with no order minimum!*Restrictions apply.Try free 30-day trial</p>
+            </div>
+        </div>
+    </section>    <section class="furniture">
+        <div class="container">
+            <div class="furniture-main">
+                <div class="category-main-head">
+                    <div class="hours-title-text">Furniture products</div>
+                    <div class="hours-link">
+                        <span>
+                            <a href="">Al</a>
+                        </span>
+                       
+                    </div>
+
+                  
+                </div>
+
+                <div class="time-main-accordeon furniture-pagination">
+                    <div class="swiper furniture-slider">
+                        <div class="time-main-pr-wrapper swiper-wrapper">
+                            <div class="time-pr-item swiper-slide">
+                                <div class="time-img">
+                                    <a href="">
+                                        <img src="assets/surface 1.png" alt="">
+                                    </a>
+                                    <div class="img-overlay">
+                                        <div class="overlay-btn">
+                                            <a href="">Add to card</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="time-company">Sumsung</div>
+                                <div class="time-title">
+                                    <a href="#">Samsung 65" 4K UHD HDR QLED Tizen Smart TV</a>
+                                </div>
+                                <div class="time-price">
+                                    <div class="new-price">$32.50</div>
+                                    <div class="old-price">$45</div>
+                                    <span class="sale-value">20% Off</span>
+                                </div>
+                            </div>
+    
+                            <div class="time-pr-item swiper-slide">
+                                <div class="time-img">
+                                    <a href="">
+                                        <img src="assets/surface 1.png" alt="">
+                                    </a>
+                                    <div class="img-overlay">
+                                        <div class="overlay-btn">
+                                            <a href="">Add to card</a>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="time-company">Rolex</div>
+                                <div class="time-title">
+                                    <a href="#">Pre-Owned Rolex Day-date 1802 Gold Watch (Certified Authenti...</a>
+                                </div>
+                                <div class="time-price">
+                                    <div class="new-price">$32.50</div>
+                                    <div class="old-price">$45</div>
+                                    <span class="sale-value">20% Off</span>
+                                </div>
+                            </div>
+                            <div class="time-pr-item swiper-slide">
+                                <div class="time-img">
+                                    <a href="">
+                                        <img src="assets/surface 1.png" alt="">
+                                    </a>
+                                    <div class="img-overlay">
+                                        <div class="overlay-btn">
+                                            <a href="">Add to card</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="time-company">Sony</div>
+                                <div class="time-title">
+                                    <a href="#">Ozark Trail 6-Person Clip & Camp Dome Tent</a>
+                                </div>
+                                <div class="time-price">
+                                    <div class="new-price">$32.50</div>
+                                    <div class="old-price">$45</div>
+                                    <span class="sale-value">20% Off</span>
+                                </div>
+                            </div>
+    
+                            <div class="time-pr-item swiper-slide">
+                                <div class="time-img">
+                                    <a href="">
+                                        <img src="assets/surface 1.png" alt="">
+                                    </a>
+                                    <div class="img-overlay">
+                                        <div class="overlay-btn">
+                                            <a href="">Add to card</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="time-company">Sumsung</div>
+                                <div class="time-title">
+                                    <a href="#">Samsung 65" 4K UHD HDR QLED Tizen Smart TV</a>
+                                </div>
+                                <div class="time-price">
+                                    <div class="new-price">$32.50</div>
+                                    <div class="old-price">$45</div>
+                                    <span class="sale-value">20% Off</span>
+                                </div>
+                            </div>
+    
+                            <div class="time-pr-item swiper-slide">
+                                <div class="time-img">
+                                    <a href="">
+                                        <img src="assets/surface 1.png" alt="">
+                                    </a>
+                                    <div class="img-overlay">
+                                        <div class="overlay-btn">
+                                            <a href="">Add to card</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="time-company">Sumsung</div>
+                                <div class="time-title">
+                                    <a href="#">Samsung 65" 4K UHD HDR QLED Tizen Smart TV</a>
+                                </div>
+                                <div class="time-price">
+                                    <div class="new-price">$32.50</div>
+                                    <div class="old-price">$45</div>
+                                    <span class="sale-value">20% Off</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+            </div>
+        </div>
+    </section>    <section class="electronics">
+        <div class="container">
+            <div class="electronics-main">
+                <div class="category-main-head">
+                    <div class="hours-title-text">Electronics products</div>
+                    <div class="hours-link">
+                        <span>
+                            <a href="">Al</a>
+                        </span>
+                       
+                    </div>
+
+                  
+                </div>
+
+                <div class="time-main-accordeon ">
+                    <div class="electronics-slider">
+                        <div class="time-main-pr-wrapper electronics-wrapper">
+                            <div class="time-pr-item swiper-slide">
+                                <div class="time-img">
+                                    <a href="">
+                                        <img src="assets/surface 1.png" alt="">
+                                    </a>
+                                    <div class="img-overlay">
+                                        <div class="overlay-btn">
+                                            <a href="">Add to card</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="time-company">Sumsung</div>
+                                <div class="time-title">
+                                    <a href="#">Samsung 65" 4K UHD HDR QLED Tizen Smart TV</a>
+                                </div>
+                                <div class="time-price">
+                                    <div class="new-price">$32.50</div>
+                                    <div class="old-price">$45</div>
+                                    <span class="sale-value">20% Off</span>
+                                </div>
+                            </div>
+    
+                            <div class="time-pr-item swiper-slide">
+                                <div class="time-img">
+                                    <a href="">
+                                        <img src="assets/surface 1.png" alt="">
+                                    </a>
+                                    <div class="img-overlay">
+                                        <div class="overlay-btn">
+                                            <a href="">Add to card</a>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="time-company">Rolex</div>
+                                <div class="time-title">
+                                    <a href="#">Pre-Owned Rolex Day-date 1802 Gold Watch (Certified Authenti...</a>
+                                </div>
+                                <div class="time-price">
+                                    <div class="new-price">$32.50</div>
+                                    <div class="old-price">$45</div>
+                                    <span class="sale-value">20% Off</span>
+                                </div>
+                            </div>
+                            <div class="time-pr-item swiper-slide">
+                                <div class="time-img">
+                                    <a href="">
+                                        <img src="assets/surface 1.png" alt="">
+                                    </a>
+                                    <div class="img-overlay">
+                                        <div class="overlay-btn">
+                                            <a href="">Add to card</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="time-company">Sony</div>
+                                <div class="time-title">
+                                    <a href="#">Ozark Trail 6-Person Clip & Camp Dome Tent</a>
+                                </div>
+                                <div class="time-price">
+                                    <div class="new-price">$32.50</div>
+                                    <div class="old-price">$45</div>
+                                    <span class="sale-value">20% Off</span>
+                                </div>
+                            </div>
+    
+                            <div class="time-pr-item swiper-slide">
+                                <div class="time-img">
+                                    <a href="">
+                                        <img src="assets/surface 1.png" alt="">
+                                    </a>
+                                    <div class="img-overlay">
+                                        <div class="overlay-btn">
+                                            <a href="">Add to card</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="time-company">Sumsung</div>
+                                <div class="time-title">
+                                    <a href="#">Samsung 65" 4K UHD HDR QLED Tizen Smart TV</a>
+                                </div>
+                                <div class="time-price">
+                                    <div class="new-price">$32.50</div>
+                                    <div class="old-price">$45</div>
+                                    <span class="sale-value">20% Off</span>
+                                </div>
+                            </div>
+    
+                            <div class="time-pr-item swiper-slide">
+                                <div class="time-img">
+                                    <a href="">
+                                        <img src="assets/surface 1.png" alt="">
+                                    </a>
+                                    <div class="img-overlay">
+                                        <div class="overlay-btn">
+                                            <a href="">Add to card</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="time-company">Sumsung</div>
+                                <div class="time-title">
+                                    <a href="#">Samsung 65" 4K UHD HDR QLED Tizen Smart TV</a>
+                                </div>
+                                <div class="time-price">
+                                    <div class="new-price">$32.50</div>
+                                    <div class="old-price">$45</div>
+                                    <span class="sale-value">20% Off</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+            </div>
+            </div>
+        </div>
+    </section>    <section class="buttons">
+        <div class="container">
+            <div class="buttons-main">
+                <div class="buttons-main-link">
+                    <a href="#">Wireless Networks</a>
+                </div>
+                <div class="buttons-main-link">
+                    <a href="#">Cell Phones</a>
+                </div>
+                <div class="buttons-main-link">
+                    <a href="#">Cameras</a>
+                </div>
+                <div class="buttons-main-link">
+                    <a href="#">Wireless Networks</a>
+                </div>
+                <div class="buttons-main-link">
+                    <a href="#">Wireless Networks</a>
+                </div>
+                <div class="buttons-main-link">
+                    <a href="#">Wireless Networks</a>
+                </div>
+                <div class="buttons-main-link">
+                    <a href="#">Wireless Networks</a>
+                </div>
+            </div>
+        </div>
+    </section>    <section class="banner">
+        <div class="container">
+            <div class="banner-main">
+                <div class="banner-main-text">
+                    <div class="banner-main-text-title">Apple Watch</div>
+                    <p>Now up to $70 off. Give Mom a gift that shows off your love.</p>
+                    <div class="main-text-btn">
+                        <a href="">Shop Now</a>
+                    </div>
+                </div>
+                <div class="banner-main-img">
+                    <img src="./assets/image 35.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>    <section class="hot">
+        <div class="container">
+            <div class="hot-main">
+                <div class="hot-main-head">
+                    <div class="category-main-head">
+                        <div class="hours-title-text">Hot New Arrivals</div>
+                        <div class="hours-link">
+                            <span>
+                                <a href="">Top 20</a>
+                            </span>
+                           
+                        </div>
+    
+                      
+                    </div>
+                </div>
+
+                <div class="hot-main-items">
+                    <div class="hot-item">
+                        <div class="hot-item-img">
+                            <img src="./assets/image 30.png" alt="">
+                        </div>
+                        <div class="hot-item-text">
+                            <div class="hot-item-text-title">Sony DJ Headphones 4334205465, Black, Standard</div>
+                            <div class="hot-item-text-price">$32.50</div>
+                        </div>
+                        <a href="#" class="hot-item-link"></a>
+                    </div>
+                    <div class="hot-item">
+                        <div class="hot-item-img">
+                            <img src="./assets/image 30.png" alt="">
+                        </div>
+                        <div class="hot-item-text">
+                            <div class="hot-item-text-title">Sony DJ Headphones 4334205465, Black, Standard</div>
+                            <div class="hot-item-text-price">$32.50</div>
+                        </div>
+                        <a href="#" class="hot-item-link"></a>
+                    </div>
+                    <div class="hot-item">
+                        <div class="hot-item-img">
+                            <img src="./assets/image 30.png" alt="">
+                        </div>
+                        <div class="hot-item-text">
+                            <div class="hot-item-text-title">Sony DJ Headphones 4334205465, Black, Standard</div>
+                            <div class="hot-item-text-price">$32.50</div>
+                        </div>
+                        <a href="#" class="hot-item-link"></a>
+                    </div>
+                    <div class="hot-item">
+                        <div class="hot-item-img">
+                            <img src="./assets/image 30.png" alt="">
+                        </div>
+                        <div class="hot-item-text">
+                            <div class="hot-item-text-title">Sony DJ Headphones 4334205465, Black, Standard</div>
+                            <div class="hot-item-text-price">$32.50</div>
+                        </div>
+                        <a href="#" class="hot-item-link"></a>
+                    </div>
+                    <div class="hot-item">
+                        <div class="hot-item-img">
+                            <img src="./assets/image 30.png" alt="">
+                        </div>
+                        <div class="hot-item-text">
+                            <div class="hot-item-text-title">Sony DJ Headphones 4334205465, Black, Standard</div>
+                            <div class="hot-item-text-price">$32.50</div>
+                        </div>
+                        <a href="#" class="hot-item-link"></a>
+                    </div>
+                    <div class="hot-item">
+                        <div class="hot-item-img">
+                            <img src="./assets/image 30.png" alt="">
+                        </div>
+                        <div class="hot-item-text">
+                            <div class="hot-item-text-title">Sony DJ Headphones 4334205465, Black, Standard</div>
+                            <div class="hot-item-text-price">$32.50</div>
+                        </div>
+                        <a href="#" class="hot-item-link"></a>
+                    </div>
+                    <div class="hot-item">
+                        <div class="hot-item-img">
+                            <img src="./assets/image 30.png" alt="">
+                        </div>
+                        <div class="hot-item-text">
+                            <div class="hot-item-text-title">Sony DJ Headphones 4334205465, Black, Standard</div>
+                            <div class="hot-item-text-price">$32.50</div>
+                        </div>
+                        <a href="#" class="hot-item-link"></a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+        <section class="trusted">
+        <div class="container">
+            <div class="trusted-main">
+                <div class="trusted-main-head">Trusted by the world’s best</div>
+                <div class="trusted-main-companys">
+                    <div class="trusted-item">
+                        <img src="./assets/Group.png" alt="">
+                    </div>
+                    <div class="trusted-item">
+                        <img src="./assets/amd-logo-1-2.png" alt="">
+                    </div>
+                    <div class="trusted-item">
+                        <img src="./assets/amd-logo-1-2.png" alt="">
+                    </div>
+                    <div class="trusted-item">
+                        <img src="./assets/amd-logo-1-2.png" alt="">
+                    </div>
+                    <div class="trusted-item">
+                        <img src="./assets/amd-logo-1-2.png" alt="">
+                    </div>
+                    <div class="trusted-item">
+                        <img src="./assets/Spotify-2-2.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>        </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-form-main">
+                    <div class="footer-form-title">Subscribe and get 20% discount.</div>
+                    <form class="footer-form" action="" method="">
+                        
+                        <input class="footer-input" id="POST-name" type="text" name="name" placeholder="Your email address">
+                        <input class="footer-btn" type="submit" value="Subscribe">
+                      </form>
+                </div>
+            </div>
+        </div>
+    </footer>    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./script/script.js"></script>
+</body>
+</html>
